@@ -1,6 +1,6 @@
 git init -> use only once while initializing the repo
 
-git remote add origin https://github.com/Matthew-Dsouza/Repo-name.git -> used only once while linking the github repo to the local git
+git remote add origin https://github.com/Matthew-Dsouza/MERN-Bootcamp-Project-1.git -> used only once while linking the github repo to the local git
 
 -----------------------------------------------------------------
 
