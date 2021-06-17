@@ -1,1 +1,0 @@
-var julie = "hi my name is julie";
