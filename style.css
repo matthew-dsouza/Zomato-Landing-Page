@@ -1,0 +1,299 @@
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more: Extra large screens, TV. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(221, 223, 224);
+}
+
+.button-general {
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* mobile devices 
+min-width: 320px;
+max-width: 479px*/
+
+/* Navigation Bar  */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.logo {
+  width: 110px;
+}
+.navbar-button {
+  margin-top: 10px;
+}
+
+/* Hero */
+.hero-item {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.hero-image {
+  width: 100%;
+}
+.hero-text {
+  font-size: 30px;
+  padding: 17px 0;
+}
+.hero-button {
+  padding: 12px;
+}
+
+/* explore section  */
+.explore-menu-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.explore-menu {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.explore-menu-heading {
+  margin-bottom: 10px;
+}
+.explore-menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.explore-menu-card {
+  width: 95%;
+  background-color: #fff;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  border-radius: 10px;
+}
+.menu-card-image {
+  width: 100%;
+
+  border-radius: 10px 10px 0 0;
+}
+.menu-card-description {
+  padding: 30px 15px;
+}
+.explore-menu-item {
+  width: 100%;
+}
+.explore-button {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* restaurant-grid */
+.restaurant-grid{
+  padding: 10px;
+}
+.restaurant-grid-item{
+}
+.restaurant-grid-heading{
+  font-size: 1.5rem;
+  margin: 30px 0;
+  text-align: center;
+}
+.restaurant-images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.images-row1{
+  display: flex;
+  gap: 7px;
+  width: 100%;
+  height: 100%;
+  align-items: baseline;
+}
+.grid-image1{
+  width: 45%;
+  height: 100%;
+  border-radius: 5px;
+}
+.grid-image2{
+  width: 55%;
+  border-radius: 5px;
+}
+.images-row2{
+  display: flex;
+  gap: 7px;
+  width: 100%;
+  height: 100%;
+}
+.grid-image3{
+  width: 55%;
+  border-radius: 5px;
+}
+.grid-image4{
+  width: 45%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+/* ----------------xxx---------------------- */
+
+/* ipads and tablets 
+max-width: 768px*/
+@media screen and (min-width: 480px) {
+  /* Navigation Bar  */
+  .navbar-button {
+    font-size: 17px;
+  }
+  /* hero  */
+  .hero-text {
+    font-size: 33px;
+    padding: 20px 0;
+  }
+  /* explore section */
+  .explore-menu-heading {
+    display: flex;
+    justify-content: center;
+  }
+  .explore-menu-item {
+    margin: 10px 0;
+  }
+  .explore-button {
+    width: 50%;
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+/* ----------------xxx---------------------- */
+
+/* small screens and laptops 
+max-width: 1024px*/
+@media screen and (min-width: 769px) {
+  /* navigation bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  .logo {
+    width: 160px;
+  }
+  .navbar-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+  }
+  /* hero  */
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 20px;
+  }
+  .hero-item {
+    width: 50%;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .hero-button {
+    padding: 12px 20px;
+  }
+  /* explore menu section  */
+  .explore-menu {
+    position: relative;
+  }
+  .explore-menu-heading {
+    margin: 30px;
+  }
+  .explore-menu-background {
+    position: absolute;
+    /* left: 0; */
+    /* top: 0; */
+
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    z-index: -3;
+    transform: skewY(-5deg);
+  }
+  .explore-menu-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .explore-menu-card {
+    height: 100%;
+  }
+  .explore-button {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    border: 2px solid rgb(230, 93, 93);
+
+    width: 10em;
+    margin-top: 30px;
+  }
+  .pizza-card {
+    position: relative;
+    bottom: 20px;
+  }
+}
+
+/* ----------------xxx---------------------- */
+
+/* large screens and desktops
+max-width: 1200px */
+@media screen and (min-width: 1025px) {
+  /* navigation bar  */
+  .navbar-button {
+    font-size: 22px;
+    padding: 12px 20px;
+  }
+  /* hero  */
+  .hero-text {
+    font-size: 40px;
+  }
+  .hero-desc {
+    padding: 5px;
+  }
+  .hero-button {
+    font-size: 22px;
+  }
+  /* explore menu section  */
+  .explore-menu-card {
+    height: 100%;
+  }
+}

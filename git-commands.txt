@@ -1,0 +1,16 @@
+git init -> use only once while initializing the repo
+
+git remote add origin https://github.com/Matthew-Dsouza/Repo-name.git -> used only once while linking the github repo to the local git
+
+-----------------------------------------------------------------
+
+git status -> checks the status of the repo
+
+git pull origin master -> used to pull the repo from github so we could "push" files into the repo in github(i think so hehe...)
+
+-----------------------------------------------------------------
+git add file-name.file-extension / git add . -> both commands track(add modified files to local git) files to git. use this command after making changes to the file and you want to add it to git
+
+git commit -m "message to specify the changes made to files" -> used to commit the files to github and specify the changes made to it  
+
+git push origin master -> pushes the files to github 
