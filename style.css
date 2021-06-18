@@ -528,4 +528,9 @@ max-width: 1200px */
   .email-section-button {
     font-size: 0.9rem;
   }
+  /* ----------quote section---------- */
+  .quote-section{
+    display: flex;
+    justify-content: center;
+  }
 }
