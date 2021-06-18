@@ -12,6 +12,7 @@
 
 body {
   background-color: rgb(221, 223, 224);
+  font-family: 'Merriweather', serif;
 }
 
 .button-general {
@@ -25,10 +26,20 @@ body {
   font-size: 18px;
   padding: 12px;
   border: none;
-  border-radius: 8px;
+  border-radius: 3px;
 }
 
-.hero-bg-shape, .hero-bg-pattern{
+.button-general:hover{
+  background-image: linear-gradient(
+    to right,
+    #ff522fb0 0%,
+    #dd2477d7 51%,
+    #ff522fb0 100%
+  );
+}
+
+.hero-bg-shape,
+.hero-bg-pattern {
   position: absolute;
   z-index: -1;
   top: 50px;
@@ -38,7 +49,7 @@ body {
 min-width: 320px;
 max-width: 479px*/
 
-/* Navigation Bar  */
+/* ----------Navigation Bar----------  */
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -51,21 +62,23 @@ max-width: 479px*/
   margin-top: 10px;
 }
 
-/* Hero */
+/* . */
+
+/* ----------Hero---------- */
 .hero-item {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
 }
-.hero-image-container{
+.hero-image-container {
   margin-top: 10px;
 }
 .hero-image {
   width: 100%;
   border-radius: 5px;
 }
-.hero-desc{
+.hero-desc {
   padding: 10px 0;
 }
 .hero-text {
@@ -76,7 +89,9 @@ max-width: 479px*/
   padding: 12px;
 }
 
-/* explore section  */
+/* . */
+
+/* ----------explore section----------  */
 .explore-menu-container {
   margin-top: 50px;
   display: flex;
@@ -124,81 +139,146 @@ max-width: 479px*/
 }
 
 /* restaurant-grid */
-.restaurant-grid{
+.restaurant-grid {
   padding: 10px;
 }
 /* .restaurant-grid-item{
 } */
-.restaurant-grid-heading{
+.restaurant-grid-heading {
   font-size: 1.5rem;
   margin: 30px 0;
   text-align: center;
 }
-.restaurant-images{
+.restaurant-images {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
 }
-.images-row1{
+.images-row1 {
   display: flex;
   gap: 7px;
   width: 100%;
   height: 100%;
   align-items: baseline;
 }
-.grid-image1{
+.grid-image1 {
   width: 45%;
   height: 100%;
   border-radius: 5px;
 }
-.grid-image2{
+.grid-image2 {
   width: 55%;
   border-radius: 5px;
 }
-.images-row2{
+.images-row2 {
   display: flex;
   gap: 7px;
   width: 100%;
   height: 100%;
 }
-.grid-image3{
+.grid-image3 {
   width: 55%;
   border-radius: 5px;
 }
-.grid-image4{
+.grid-image4 {
   width: 45%;
   height: 100%;
   border-radius: 5px;
 }
 
+/* ----------email section---------- */
+.email-section-container {
+  width: 95%;
+  justify-content: center;
+  margin: 50px auto;
+}
+.email-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+.email-section-heading {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.email-section-item {
+  display: flex;
+  gap: 10px;
+}
+#email {
+  background-color: #fcedf0;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  text-align: center;
+}
+#email::placeholder {
+  color: #a01f1f;
+}
+.email-section-button {
+  font-size: 12px;
+  font-weight: 600;
+}
 
-/* ----------------xxx---------------------- */
+/* ----------quote-section----------  */
+.quote-section {
+  position: relative;
+  width: 95%;
+  
+  display: flex;
+  margin: 4rem auto;
+}
+.quote-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.quote-image-text {
+  border-radius: 10px;
+  background-image: url(./assets/quote-image.png);
+}
+.quote-text{
+  border-radius: 10px;
+  background: rgba(10, 64, 101, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-weight: 600;
+  
+  text-align: center;
+  padding: 50px 20px;
+}
+/* . */
+
+/* ----------xxx---------- */
 
 /* ipads and tablets 
 max-width: 768px*/
 @media screen and (min-width: 480px) {
-  /* Navigation Bar  */
-  .navbar-container{
+  /* ----------Navigation Bar----------  */
+  .navbar-container {
     margin-bottom: 1.5rem;
   }
   .navbar-button {
     font-size: 17px;
   }
-  /* hero  */
+  /* ----------hero----------  */
   .hero-text {
     font-size: 33px;
     padding: 20px 0;
   }
-  .hero-bg-shape, .hero-bg-pattern{
+  .hero-bg-shape,
+  .hero-bg-pattern {
     position: absolute;
     z-index: -1;
   }
-  /* explore section */
-  .explore-menu-heading {
-    /* display: flex;
+
+  /* ----------explore section---------- */
+  /* .explore-menu-heading {
+    display: flex;
     justify-content: center;
-    margin: auto; */
-  }
+    margin: auto;
+  } */
   .explore-menu-item {
     margin: 10px 0;
   }
@@ -209,14 +289,32 @@ max-width: 768px*/
     margin: auto;
     justify-content: center;
   }
+
+  /* ----------email section---------- */
+  .email-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .email-section-item {
+    justify-content: center;
+  }
+  #email {
+    width: 13rem;
+  }
+  .email-section-button {
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
 
-/* ----------------xxx---------------------- */
+/* . */
+
+/* ----------xxx---------- */
 
 /* small screens and laptops 
 max-width: 1024px*/
 @media screen and (min-width: 700px) {
-  /* navigation bar */
+  /* ----------navigation bar---------- */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -229,7 +327,7 @@ max-width: 1024px*/
     margin-top: 20px;
     padding: 12px 20px;
   }
-  /* hero  */
+  /* ----------hero----------  */
   .hero {
     display: flex;
     flex-direction: row-reverse;
@@ -242,7 +340,8 @@ max-width: 1024px*/
   .hero-image {
     width: 100%;
   }
-  .hero-bg-shape, .hero-bg-pattern{
+  .hero-bg-shape,
+  .hero-bg-pattern {
     position: absolute;
     z-index: -1;
     top: 4rem;
@@ -251,7 +350,7 @@ max-width: 1024px*/
     padding: 12px 20px;
   }
   /* explore menu section  */
-  .explore-menu-container{
+  .explore-menu-container {
     margin-top: 100px;
   }
   .explore-menu {
@@ -301,26 +400,29 @@ max-width: 1024px*/
     bottom: 20px;
   }
   /* restaurant grid  */
-  .restaurant-grid{
+  .restaurant-grid {
     display: flex;
     align-items: baseline;
   }
-  .restaurant-grid-heading{
+  .restaurant-grid-heading {
     font-size: 35px;
     padding: 10px;
   }
-  .restaurant-images{
+  .restaurant-images {
     /* display: flex; */
     width: 100%;
   }
+  /* ----------email section---------- */
 }
 
-/* ----------------xxx---------------------- */
+/* . */
+
+/* ----------xxx---------- */
 
 /* large screens and desktops
 max-width: 1200px */
 @media screen and (min-width: 1025px) {
-  /* navigation bar  */
+  /* ----------navigation bar----------  */
   .navbar-button {
     font-size: 22px;
     padding: 12px 20px;
@@ -335,26 +437,36 @@ max-width: 1200px */
   .hero-button {
     font-size: 22px;
   }
-  /* explore menu section  */
-  .explore-menu-cards{
+  /* ----------explore menu section----------  */
+  .explore-menu-cards {
     display: flex;
     width: 85%;
   }
   .explore-menu-card {
     height: 100%;
   }
-  /* restaurant grid  */
-  .restaurant-grid{
+  /* ----------restaurant grid----------  */
+  .restaurant-grid {
     display: flex;
     align-items: baseline;
     margin: 10px;
   }
-  .restaurant-grid-heading{
+  .restaurant-grid-heading {
     font-size: 50px;
     padding: 10px;
   }
-  .restaurant-images{
+  .restaurant-images {
     /* display: flex; */
     width: 70%;
+  }
+  /* ----------email section---------- */
+  .email-section-heading {
+    font-size: 2.7rem;
+  }
+  #email {
+    padding: 0.5rem 3rem;
+  }
+  .email-section-button {
+    font-size: 0.9rem;
   }
 }
