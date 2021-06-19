@@ -414,7 +414,8 @@ max-width: 1024px*/
     position: relative;
   }
   .explore-menu-heading {
-    margin: 30px;
+    margin: 40px;
+    font-size: 2rem;
   }
   .explore-menu-background {
     position: absolute;
@@ -479,6 +480,15 @@ max-width: 1024px*/
   .quote-section {
     display: flex;
     justify-content: center;
+  }
+  .footer-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .footer-hyperlinks {
+    line-height: 1.5rem;
   }
 }
 
@@ -546,4 +556,12 @@ max-width: 1200px */
     justify-content: center;
   }
   /* ----------footer---------- */
+  .footer-items {
+    width: 80%;
+    gap: 2rem;
+  }
+  .footer-logo {
+    width: 100%;
+    justify-content: center;
+  }
 }
