@@ -95,7 +95,7 @@ max-width: 479px*/
 }
 .hero-desc {
   padding: 10px 0;
-} 
+}
 .hero-text {
   font-size: 30px;
 }
@@ -234,6 +234,7 @@ max-width: 479px*/
 }
 #email::placeholder {
   color: #a01f1f;
+  width: 100%;
 }
 .email-section-button {
   font-size: 12px;
@@ -385,6 +386,10 @@ max-width: 1024px*/
     padding: 0 20px;
     gap: 4px;
   }
+  .hero-image-container {
+    display: flex;
+    width: 100%;
+  }
   .hero-item {
     width: 50%;
   }
@@ -395,7 +400,8 @@ max-width: 1024px*/
   .hero-bg-pattern {
     position: absolute;
     z-index: -1;
-    top: 4rem;
+    top: 5rem;
+    width: 49%;
   }
   .hero-button {
     padding: 12px 20px;
@@ -468,6 +474,12 @@ max-width: 1024px*/
     width: 100%;
   }
   /* ----------email section---------- */
+
+  /* ----------quote section---------- */
+  .quote-section {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* . */
@@ -529,10 +541,9 @@ max-width: 1200px */
     font-size: 0.9rem;
   }
   /* ----------quote section---------- */
-  .quote-section{
+  .quote-section {
     display: flex;
     justify-content: center;
   }
   /* ----------footer---------- */
-
 }
