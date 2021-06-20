@@ -404,7 +404,7 @@ max-width: 1024px*/
     position: absolute;
     z-index: -1;
     /* top: 7rem; */
-    height: 40%;
+    width: 50%;
     right: 1rem;
   }
   .hero-button {
