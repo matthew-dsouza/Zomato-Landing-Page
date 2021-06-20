@@ -51,7 +51,8 @@ a {
 .hero-bg-pattern {
   position: absolute;
   z-index: -1;
-  top: 50px;
+  top: 3.5rem;
+  right: 0.5rem;
 }
 
 /* ----------xxx---------- */
@@ -321,6 +322,8 @@ max-width: 768px*/
   }
   .hero-bg-shape,
   .hero-bg-pattern {
+    height: 30rem;
+  
     position: absolute;
     z-index: -1;
   }
@@ -400,8 +403,9 @@ max-width: 1024px*/
   .hero-bg-pattern {
     position: absolute;
     z-index: -1;
-    top: 5rem;
-    width: 49%;
+    /* top: 7rem; */
+    height: 40%;
+    right: 1rem;
   }
   .hero-button {
     padding: 12px 20px;
@@ -436,7 +440,8 @@ max-width: 1024px*/
   .explore-menu-cards {
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 1rem;
+    padding: 0 1rem;
   }
   .explore-menu-card {
     height: 100%;
@@ -465,6 +470,7 @@ max-width: 1024px*/
   .restaurant-grid {
     display: flex;
     align-items: baseline;
+    padding: 1rem;
   }
   .restaurant-grid-heading {
     font-size: 35px;
