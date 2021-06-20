@@ -517,7 +517,8 @@ max-width: 1200px */
   /* ----------explore menu section----------  */
   .explore-menu-cards {
     display: flex;
-    width: 85%;
+    width: 95%;
+    gap: 1.5rem;
   }
   .explore-menu-card {
     height: 100%;
